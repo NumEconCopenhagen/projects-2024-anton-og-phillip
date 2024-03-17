@@ -1,9 +1,9 @@
-# \[Group name\]
+# \[Anton og Phillip\]
 
 **Group members:**
-- A
-- B
-- C
+- Anton Holsøe
+- Phillip Warhøi-Rasmussen
+  
 
 This repository contains  
 1. Inaugural project. 
