@@ -2,7 +2,7 @@
 
 **Group members:**
 - Anton Holsøe
-- Phillip Warhøi-Rasmussen
+- Phillip Warhøi-
   
 
 This repository contains  
