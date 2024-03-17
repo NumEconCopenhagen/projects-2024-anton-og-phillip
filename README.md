@@ -1,7 +1,7 @@
 # \[Anton og Phillip\]
 
 **Group members:**
-- Anton Holsøe-Mortensen
+- Anton Holsøe
 - Phillip Warhøi-Rasmussen
   
 
