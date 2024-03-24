@@ -1,8 +1,8 @@
 # \[Anton og Phillip\]
 
 **Group members:**
-- Anton Holsøe
-- Phillip Warhøi-Rasmussen
+- Anton Holsøe (vlq269)
+- Phillip Warhøi-Rasmussen (kdf734)
   
 
 This repository contains  
