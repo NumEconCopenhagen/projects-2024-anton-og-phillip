@@ -2,7 +2,7 @@ from types import SimpleNamespace
 
 class ExchangeEconomyClass:
 
-    def _init_(self):
+    def __init__(self):
 
         par = self.par = SimpleNamespace()
 
@@ -45,10 +45,10 @@ class ExchangeEconomyClass:
     def demand_B1(self,p1):
 
         par = self.par
-        return par.beta((p1*par.w1B+par.p2*par.w2B)/p1)
+        return par.beta*((p1*par.w1B+par.p2*par.w2B)/p1)
 
 #Define demand for good 2 for consumber B
     def demand_B2(self,p1):
 
         par = self.par
-        return (1-par.beta)((p1*par.w1B+par.p2*par.w2B)/par.p2)
+        return (1-par.beta)*((p1*par.w1B+par.p2*par.w2B)/par.p2)
