@@ -156,19 +156,22 @@ def visualize_tables(Alldata):
     # Visualizing GDP Growth
     Alldata['GDP_growth'] = Alldata['GrossDP'].pct_change() * 100  # Calculate percentage change for GDP growth
     gdp_growth_data = Alldata.dropna(subset=['GDP_growth'])  # Drop rows with NaN values in GDP_growth
+    filtered_data = Alldata[Alldata['Year']>2003]
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(14, 6))
     plt.bar(gdp_growth_data['Year'], gdp_growth_data['GDP_growth'], color='blue')
     plt.xlabel('Year')
     plt.ylabel('GDP Growth Rate (%)')
+    plt.xticks(filtered_data['Year'].unique())  # Set x-ticks to unique years
     plt.title('Annual GDP Growth Rate')
     plt.show()
 
     # Visualizing Fertility Rate per Woman
     Alldata['Fertilityrate_per_woman'] = (Alldata['Fertilityrate'] / 1000).round(2)
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(14, 6))
     plt.plot(Alldata['Year'], Alldata['Fertilityrate_per_woman'], marker='o', color='orange')
     plt.xlabel('Year')
+    plt.xticks(Alldata['Year'].unique())  # Set x-ticks to unique years
     plt.ylabel('Fertility Rate (Babies per Woman)')
     plt.title('Fertility Rate per Woman Over Time')
     plt.show()
